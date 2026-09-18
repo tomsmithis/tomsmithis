@@ -8,9 +8,9 @@
   if (!completionEl || !tickerEl || !heroEl) return;
 
   var frames = [
-    ' a technical Google Ads contractor for £3-10M DTC ecommerce brands',
-    ' fixing feeds and account structure, not just tweaking bids and budgets',
-    ' usually called in when an account has plateaued'
+    ' usually called in when sales have plateaued',
+    ' making the complex data easy to understand and act on',
+    ' your growth partner in paid, cro and analytics'
   ];
 
   // Honour prefers-reduced-motion: frame 0 already in HTML, no animation needed

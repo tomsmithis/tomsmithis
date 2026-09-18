@@ -1,0 +1,10 @@
+# Normalise text assets to LF so editors don't produce whitespace-only diffs.
+*.svg  text eol=lf
+*.html text eol=lf
+*.css  text eol=lf
+*.js   text eol=lf
+
+# Never touch binaries.
+*.png  -text
+*.ico  -text
+*.avif -text

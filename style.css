@@ -232,6 +232,7 @@ section:not(.hero) {
 #contact {
   background-color: var(--color-section-alt);
   padding-bottom: var(--sp-48);
+  scroll-margin-top: var(--sp-32);   /* clear the sticky header on anchor jumps */
 }
 
 
@@ -321,7 +322,7 @@ section:not(.hero) {
 
 
 /* ═══════════════════════════════════════════════════════════════
-   Hero  — sub-headline, CTAs, disqualifier
+   Hero  — sub-headline, CTA
    ═══════════════════════════════════════════════════════════════ */
 .hero-sub {
   font-size: 18px;
@@ -338,13 +339,6 @@ section:not(.hero) {
   align-items: stretch;
   gap: var(--sp-8);
   margin-bottom: var(--sp-16);
-}
-
-.disqualifier {
-  font-size: 14px;
-  line-height: 24px;
-  color: var(--color-mute);
-  max-width: var(--max-body);
 }
 
 
@@ -376,33 +370,6 @@ section:not(.hero) {
 
 .btn-primary:visited {
   color: var(--color-paper);
-}
-
-.btn-secondary {
-  display: inline-block;
-  background: transparent;
-  color: var(--color-navy);
-  font-family: var(--font-body);
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1;
-  text-decoration: none;
-  text-align: center;
-  padding: var(--sp-16) var(--sp-24);
-  border-radius: var(--radius);
-  border: 1px solid var(--color-navy);
-  cursor: pointer;
-  transition: background-color 200ms ease;
-  white-space: nowrap;
-}
-
-.btn-secondary:hover {
-  background-color: rgba(30, 58, 95, 0.07);
-  color: var(--color-navy);
-}
-
-.btn-secondary:visited {
-  color: var(--color-navy);
 }
 
 
@@ -523,10 +490,6 @@ section:not(.hero) {
   line-height: 28px;
   font-weight: 500;
   color: var(--color-navy);
-}
-
-.perf-subline + .perf-subline {
-  margin-top: var(--sp-4);
 }
 
 
@@ -726,61 +689,6 @@ section:not(.hero) {
 
 
 /* ═══════════════════════════════════════════════════════════════
-   Scope
-   ═══════════════════════════════════════════════════════════════ */
-#scope {
-  padding-top: 0;
-  padding-bottom: var(--sp-48);
-}
-
-.scope-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--sp-16);
-}
-
-.scope-card {
-  background-color: var(--color-section-alt);
-  border-radius: var(--radius);
-  padding: var(--sp-32);
-}
-
-.scope-card-heading {
-  font-family: var(--font-body);
-  font-size: 18px;
-  line-height: 28px;
-  font-weight: 600;
-  color: var(--color-ink);
-  margin-bottom: var(--sp-16);
-}
-
-.scope-bullets {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.scope-bullets li {
-  font-size: 16px;
-  line-height: 28px;
-  color: var(--color-ink);
-  padding-left: var(--sp-16);
-  position: relative;
-}
-
-.scope-bullets li::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 11px;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background-color: var(--color-navy);
-}
-
-
-/* ═══════════════════════════════════════════════════════════════
    Contact
    ═══════════════════════════════════════════════════════════════ */
 
@@ -912,18 +820,6 @@ section:not(.hero) {
     border-top: 2px dashed var(--color-navy);
     opacity: 0.3;
     z-index: 0;
-  }
-
-  /* Scope — 2-column desktop */
-  #scope {
-    padding-top: 0;
-    padding-bottom: var(--sp-64);
-  }
-
-  .scope-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--sp-24);
-    align-items: stretch;
   }
 
   .header-inner {
